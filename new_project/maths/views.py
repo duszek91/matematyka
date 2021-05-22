@@ -5,16 +5,16 @@ from django.shortcuts import render
 
 
 def add(request, number1, number2):
-    return HttpResponse(f"{number1 + number2}")
+    return HttpResponse(int(number1) + int(number2))
 
 
 def sub(request, number1, number2):
-    return HttpResponse(f"{number1 - number2}")
+    return HttpResponse(int(number1) - int(number2))
 
 
 def div(request, number1, number2):
-    return HttpResponse(f"{number1 / number2}")
+    return HttpResponse(int(number1) / int(number2))
 
 
 def mul(request, number1, number2):
-    return HttpResponse(f"{number1 * number2}")
+    return HttpResponse(int(number1) * int(number2))
