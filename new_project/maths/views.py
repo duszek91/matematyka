@@ -13,7 +13,7 @@ def sub(request, number1, number2):
 
 
 def div(request, number1, number2):
-    if number2 == 0:
+    if number2 == "0":
         return HttpResponse("nie dziel przez 0")
     return HttpResponse(int(number1) / int(number2))
 
